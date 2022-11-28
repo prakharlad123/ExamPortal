@@ -58,7 +58,7 @@
                 <form th:action="@{/organiser/login}" method="post">
                   <div class="input-group mb-3">
                     <input type="email" id="email" class="form-control" placeholder="Email" name="email" required
-                           pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+                           pattern="^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
                     <div class="input-group-append">
                       <div class="input-group-text">
                         <span class="fas fa-envelope"></span>

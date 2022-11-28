@@ -86,7 +86,7 @@
                                 <form th:action="@{'/'+ ${exam.getExamCode()} +'/login'}" method="post" autocomplete="off">
                                     <div class="input-group mb-3">
                                         <input type="email" class="form-control" placeholder="Email" name="email" required="true"
-                                        pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+                                        pattern="^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
                                         <div class="input-group-append">
                                             <div class="input-group-text">
                                                 <span class="fas fa-envelope"></span>
@@ -95,8 +95,7 @@
                                     </div>
                                     <div class="input-group mb-3">
                                         <input type="password" class="form-control" placeholder="Password" name="password" autocomplete="off"
-                                        required="true"
-                                        pattern="^(?=(.*[a-z]){3,})(?=(.*[A-Z]){1,})(?=(.*[0-9]){1,})(?=(.*[!@#$%^&*()\-__+.]){1,}).{8,}$">
+                                        required="true">
                                         <div class="input-group-append">
                                             <div class="input-group-text">
                                                 <span class="fas fa-lock"></span>

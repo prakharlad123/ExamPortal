@@ -43,6 +43,7 @@ public class InvalidRegistration {
         WebElement register_button = driver.findElement(By.id("register"));
         register_button.click(); //Clicking on the 'Register' button
 
-//        driver.close();
+        Thread.sleep(10000);
+        driver.close();
     }
 }

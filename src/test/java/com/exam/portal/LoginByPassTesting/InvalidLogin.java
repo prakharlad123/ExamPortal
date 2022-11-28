@@ -26,10 +26,12 @@ public class InvalidLogin {
         js.executeScript("document.getElementsByName('password')[0].setAttribute('pattern', '(.*?)')");
         password.sendKeys("prakharlad");
 
+        Thread.sleep(2500);
 
         WebElement login_button = driver.findElement(By.id("login"));
         login_button.click(); //Clicking on the 'Login' button
 
-//        driver.close();
+        Thread.sleep(10000);
+        driver.close();
     }
 }
